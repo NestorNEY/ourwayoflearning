@@ -10,6 +10,8 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
         <!-- Styles -->
+        <!-- Styles 
+                    2-->
         <style>
             html, body {
                 background-color: #fff;
@@ -19,7 +21,7 @@
                 height: 100vh;
                 margin: 0;
             }
-
+            
             .full-height {
                 height: 100vh;
             }
