@@ -10,11 +10,21 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+//Ejemplos
+
+Route::get('/encabezado', function () {
+    return view('encabezado/encabezado');
+});
+
 //Rutas de Menu
 
 Route::get('/', function () {
     return view('index');
 });
+
+
+
+
 
 //Rutas de Login
 
@@ -29,6 +39,12 @@ Route::get('/login/inciarsesion', function () {
 Route::get('/login/registrarte', function () {
     return view('index');
 });
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+
+
 
 //Rutas de Categorias
 
@@ -39,13 +55,19 @@ Route::get('/categorias', function () {
 Route::get('/categorias/primaria-matematicas', function () {
     return view('index');
 });
-        #etc de categorias
+
+
+
+
 
 //Rutas de Acerca de
 
 Route::get('/acercade', function () {
     return view('index');
 });
+
+
+
 
 //Rutas de Paginas de Informacion
 

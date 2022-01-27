@@ -1,23 +1,30 @@
 <!DOCTYPE html>
+<script>
+    function redirectHome() {
+        window.location.href = "http://127.0.0.1:8000/";
+    }
+</script>
 <html lang="es">
-    <head>
-        <meta charset="UFT-8">
-        <meta name="viewport" content="widht=device-widht, initial-sacel=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Iniciar sesión</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ asset('css/login/iniciarsesion.css') }}">
+</head>
     <body>
-        <p>
-            Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.
-            Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, 
-            cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una 
-            galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. 
-            No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos 
-            electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la 
-            creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más 
-            recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual 
-            incluye versiones de Lorem Ipsum.
-        </p>
+        <div id="contenedor-main">
+            <div id="subcont">
+                <h1>Iniciar sesión</h1>
+            </div>
+        </div>
+        @if (Route::has('login'))
+            @auth
+                <a id="hometext" href="{{ url('/home') }}">Home</a>
+            @else
+                <a id="login" href="{{ route('login') }}">Login</a>
+            @endauth
+        @endif
+        </div>
     </body>
-
 </html>
