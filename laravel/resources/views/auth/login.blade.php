@@ -1,3 +1,13 @@
+@php
+    function catchMessage($catcher){
+        if ($catcher = "These credentials do not match our records."){
+            $mensaje = "Estas credenciales no coinciden con nuestros registros.";
+            return $mensaje;
+        }
+    }
+@endphp
+
+
 @extends('layouts.app')
 
 @section('content')
@@ -10,7 +20,9 @@
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
-
+                            <script>
+                                window.location.href = "http://127.0.0.1:8000/home";
+                            </script>
                         <div class="form-group row">
                             <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
 
@@ -19,8 +31,9 @@
 
                                 @error('email')
                                     <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
+                                        <strong>{{ catchMessage($message) }}</strong>
                                     </span>
+                                    
                                 @enderror
                             </div>
                         </div>

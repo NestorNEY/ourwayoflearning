@@ -28,17 +28,14 @@ Route::get('/', function () {
 
 //Rutas de Login
 
-Route::get('/login', function () {
-    return view('index');
-});
-
-Route::get('/login/inciarsesion', function () {
+Route::get('/login/iniciarsesion', function () {
     return view('Login/iniciarsecion');
 });
 
 Route::get('/login/registrarte', function () {
-    return view('index');
+    return view('Login/registrarte');
 });
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

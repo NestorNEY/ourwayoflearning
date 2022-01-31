@@ -12,13 +12,13 @@
     margin-top: 0px;
 }
 #contenedor-main #subcont{
-    margin-top: 7%;
+    margin-top: 2%;
     margin-right: 22%;
     margin-left: 22%;
     background-color: rgb(217, 217, 217);
     border-radius: 30px;
     border-color: transparent;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
 }
 #contenedor-main #subcont h1{
     margin: 5%;
@@ -31,8 +31,30 @@
 #contenedor-main #subcont form{
     background-color: transparent;
 }
+#contenedor-main #subcont form #nombre{
+    margin-top: 1%;
+    background-color: transparent;
+}
+#contenedor-main #subcont form #nombre #label-name{
+    font-weight: 800;
+    background-color: transparent;
+    margin-left: 13%;
+    color: rgb(63, 63, 63);
+}
+#contenedor-main #subcont form #nombre #name-input{
+    background-color: transparent;
+}
+#contenedor-main #subcont form #nombre #name-input input{
+    margin-top: 1%;
+    background-color: white;
+    margin-left: 13%;
+    border-color: rgb(63, 63, 63);
+    border-radius: 5px;
+    width: 72%;
+    height: 30px;
+}
 #contenedor-main #subcont form #correo-electronico{
-    margin-top: 5%;
+    margin-top: 4%;
     background-color: transparent;
 }
 #contenedor-main #subcont form #correo-electronico #label-email{
@@ -66,8 +88,21 @@
     font-size: 11px;
     margin-left: 13%;
 }
+#contenedor-main #subcont form #contraseña #message-error{
+    background-color: transparent;
+    text-align: center;
+    color: rgb(255, 60, 60);
+}
+#contenedor-main #subcont form #contraseña #message-error strong{
+    background-color: transparent;
+    text-align: center;
+    color: rgb(255, 60, 60);
+    vertical-align: middle;
+    font-size: 11px;
+    margin-left: 13%;
+}
 #contenedor-main #subcont form #contraseña{
-    margin-top: 5%;
+    margin-top: 4%;
     background-color: transparent;
 }
 #contenedor-main #subcont form #contraseña #label-contraseña{
@@ -77,9 +112,6 @@
     color: rgb(63, 63, 63);
 }
 #contenedor-main #subcont form #contraseña #contraseña-input{
-    background-color: transparent;
-}
-#contenedor-main #subcont form #contraseña #contraseña-input #password{
     margin-top: 1%;
     background-color: white;
     margin-left: 13%;
@@ -88,42 +120,53 @@
     width: 72%;
     height: 30px;
 }
-#contenedor-main #subcont form #pie-login{
+#contenedor-main #subcont form #confirm-password{
+    margin-top: 4%;
     background-color: transparent;
-    margin-top: 5%;
 }
-#contenedor-main #subcont form #pie-login #forgeter{
+#contenedor-main #subcont form #confirm-password #confirmar-contraseña{
+    font-weight: 800;
     background-color: transparent;
-    text-align: center;
+    margin-left: 13%;
+    color: rgb(63, 63, 63);
 }
-#contenedor-main #subcont form #pie-login #forgeter a{
-    background-color: transparent;
-    text-align: center;
-    font-size: 15px;
-    text-decoration: none;
-    color: rgb(127, 127, 127);
+#contenedor-main #subcont form #confirm-password #password-confirm{
+    margin-top: 1%;
+    background-color: white;
+    margin-left: 13%;
+    border-color: rgb(63, 63, 63);
+    border-radius: 5px;
+    width: 72%;
+    height: 30px;
 }
-#contenedor-main #subcont form #pie-login #sumit-cheker{
+
+
+
+
+#contenedor-main #subcont form #sumit-cheker{
     background-color: transparent;
     margin-right: 20%;
-    margin-left: 30%;
-    margin-top: 5%;
+    margin-left: 38%;
+    margin-top: 4%;
     margin-bottom: 5%;
+    align-items: center;
 }
-#contenedor-main #subcont form #pie-login #sumit-cheker #button-login{
+#contenedor-main #subcont form #sumit-cheker #button-register{
     background-color: transparent;
     display: inline-block;
+    align-items: center;
 
 }
-#contenedor-main #subcont form #pie-login #sumit-cheker #button-login #button-login-subcontainer{
+#contenedor-main #subcont form #sumit-cheker #button-register #button-register-subcontainer{
     background-color: rgba(17, 17, 17, .600);
     height: 40px;
     width: 150px;
     border-radius: 5px;
     color: white;
     font-weight: 750;
+    align-items: center;
 }
-#contenedor-main #subcont form #pie-login #sumit-cheker #button-login #button-login-subcontainer:hover{
+#contenedor-main #subcont form #sumit-cheker #button-register #button-register-subcontainer:hover{
     height: 40px;
     width: 150px;
     border-radius: 5px;
@@ -131,21 +174,5 @@
     font-weight: 750;
     cursor: pointer;
     background-color: rgb(32, 32, 32);
-}
-#contenedor-main #subcont form #pie-login #sumit-cheker #recordar-cheker{
-    background-color: transparent;
-    display: inline-block;
-    color: rgb(127, 127, 127);
-    vertical-align: middle;
-}
-#contenedor-main #subcont form #pie-login #sumit-cheker #recordar-cheker input{
-    background-color: rgba(17, 17, 17, .600);
-    width: 17px;
-    height: 17px;
-    display: inline-block;
-    vertical-align: middle;
-}
-#contenedor-main #subcont form #pie-login #sumit-cheker #recordar-cheker #text-recordarme{
-    background-color: transparent;
-    vertical-align: middle;
+    align-items: center;
 }
